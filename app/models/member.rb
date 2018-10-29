@@ -1,9 +1,9 @@
 class Member
   attr_accessor :name, :power, :biography
 
-  def initialize(name, power, biography)
-    @name = name
-    @power = power
-    @biography = biography
+  def initialize(params)
+    @name = params[:name]
+    @power = params[:power]
+    @biography = params[:biography]
   end
 end
